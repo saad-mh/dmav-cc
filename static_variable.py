@@ -1,7 +1,12 @@
 import matplotlib.pyplot as plt
 
 x = [1, 2, 3, 4, 5]
-y = [10, 20, 15, 25, 30]
+# y = [10, 20, 15, 25, 30]
+
+def f(x):
+    return 2 * x + 5
+
+y = [f(xi) for xi in x]
 
 plt.plot(x, y, marker="o")
 
